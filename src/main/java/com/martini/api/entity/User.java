@@ -2,14 +2,14 @@ package com.martini.api.entity;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "users")
+@Entity //SE DECLARA QUE LA CLASE ES UNA ENTITY
+@Table(name = "users") //NOMBRE DE LA TABLA DE LA BD
 public class User {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id  //NOTACIÓN PARA INDICAR QUE ES UN ID
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //NOTACIÓN PARA INDICAR EL AUTOINCREMENTO
     public Long id;
-    @Column(name = "name")
+    @Column(name = "name")//NOMBRES DE LA TABLA EN LA BD RELACIONADA AL ATRIBUTO DE ABAJO
     public String name;
     @Column(name = "username")
     public String username;
